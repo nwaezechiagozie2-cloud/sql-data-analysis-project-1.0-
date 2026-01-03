@@ -1,4 +1,4 @@
--- Active: 1764005995195@@127.0.0.1@3306@DataWarehouseAnalytics
+-- Active: 1764674974722@@127.0.0.1@3306@DataWarehouseAnalytics
 -- =============================================================================
 -- BUSINESS INSIGHTS ANALYSIS
 -- =============================================================================
@@ -71,6 +71,16 @@ GROUP BY
 SELECT
     c.country,
     SUM(s.sales_amount) AS total_revenue,
+    SUM(s.sales_amount) - SUM(p.cost * s.quantity) AS total_profit,
+    CONCAT(
+        ROUND(
+            (
+                SUM(s.sales_amount) - SUM(p.cost * s.quantity)
+            ) / SUM(s.sales_amount) * 100,
+            2
+        ),
+        '%'
+    ) AS profit_margin,
     COUNT(DISTINCT s.order_number) AS total_orders,
     ROUND(
         SUM(s.sales_amount) / COUNT(DISTINCT s.order_number),
@@ -78,7 +88,10 @@ SELECT
     ) AS avg_order_value
 FROM
     gold_fact_sales s
-    JOIN gold_dim_customers c ON s.customer_key = c.customer_key
+    JOIN
+        gold_dim_customers c ON s.customer_key = c.customer_key
+    JOIN
+        gold_dim_products p ON s.product_key = p.product_key
 GROUP BY
     c.country
 ORDER BY total_revenue DESC;
@@ -98,7 +111,6 @@ GROUP BY
     p.category
 ORDER BY total_revenue DESC
 LIMIT 10;
-
 -- =============================================================================
 -- NEXT STEP: High-level metrics found a margin gap.
 -- Go to `business_deep_dive.sql` to find the root cause of these low margins.
