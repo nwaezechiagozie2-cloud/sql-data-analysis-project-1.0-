@@ -18,7 +18,7 @@ The analysis follows a logical progression: **High-Level Health Check -> Root Ca
 4.  **`regional_deep_dive.sql`**: **The Canada Secret.** Proved that Canada's high profit comes from a 5.2% accessory attachment rate, compared to Australia's 1.5%.
 
 ### Phase 3: Customer Retention & Loyalty
-5.  **`customer_segmentation_rfm.sql`**: Advanced segmentation. Discovered that 53% of revenue ($15.6M) relies on a small group of "Whales."
+5.  **`customer_segmentation_rfm.sql`**: Advanced segmentation. Discovered that 53% of revenue ($15.6M) relies on a small group of "Champions."
 6.  **`verify_accessory_behavior.sql`**: **The Strategic Pivot.** Disproved the theory that accessories drive loyalty; proved that **Bike Buyers** are the true loyalty anchor.
 7.  **`correlation_analysis.sql`**: **The 80% Gap.** Discovered that 8 out of 10 bike buyers globally leave the store without a helmet.
 
@@ -32,7 +32,7 @@ The analysis follows a logical progression: **High-Level Health Check -> Root Ca
 ---
 
 ## Key Business Insights
-*   **The Whale Dependency:** 53% of revenue is tied to just 3,600 customers.
+*   **The High-Value Dependency:** 53% of revenue is tied to just 3,600 customers.
 *   **The Australia Gap:** $8.8M in bike sales with only 1.5% accessory attachment—a massive missed opportunity for high-margin profit.
 *   **The Loyalty Anchor:** Bikes, not accessories, are the primary driver of long-term customer retention (55% repeat rate).
 *   **The 2013 Blueprint:** Proved that a 90% reactivation rate of old customers is possible, providing a roadmap for current "At-Risk" revenue.

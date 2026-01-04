@@ -8,7 +8,7 @@
 -- 1. Champions: Best customers (Recent, Frequent, High Spend)
 -- 2. Loyal Spenders: Consistent high-value repeat customers
 -- 3. Loyal Visitors: Frequent buyers with low average spend
--- 4. Whales: Rare buyers who spend very large amounts
+-- 4. High-Value One-Timers: Rare buyers who spend very large amounts
 -- 5. Potential Loyalist: Recent customers with 2+ purchases
 -- 6. New Customers: Recent first-time buyers
 -- 7. At Risk: High-value customers who haven't returned recently
@@ -125,7 +125,7 @@ SELECT
         WHEN (
             f_score <= 2
             AND m_score = 4
-        ) THEN 'Whales'
+        ) THEN 'High-Value One-Timers'
         WHEN (
             r_score >= 3
             AND f_score = 2

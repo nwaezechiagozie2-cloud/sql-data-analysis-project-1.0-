@@ -68,7 +68,7 @@ WITH
                 WHEN (
                     f_score <= 2
                     AND m_score = 4
-                ) THEN 'Whales'
+                ) THEN 'High-Value One-Timers'
                 WHEN (
                     r_score >= 3
                     AND f_score = 2
