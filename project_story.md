@@ -14,15 +14,16 @@ With our "Value" hypothesis in hand, we went hunting for the region that was hur
 *   **The Calculation:** We didn't just guess the impact; we calculated it. In `regional_deep_dive.sql`, we proved that if Australia simply matched Canada's attachment rate, we would generate an extra **$380,000 in pure profit**.
 *   **The Dead End:** This looked like the answer. The recommendation seemed obvious: "Tell the Australian sales team to work harder." But something didn't add up. How could our biggest market be our "worst" performer? The numbers were contradictory, and we knew we couldn't just issue a command without understanding the *customer*.
 
-## Chapter 3: The Customer Reality (Whales & Cohorts)
+## Chapter 3: The Customer Reality (Segmentation & Focus)
 We realized we were looking at "Sales" when we should have been looking at "People." We paused the regional analysis to build a full customer profile using **RFM Segmentation** (`customer_segmentation_rfm.sql`).
 
-*   **The "Whale" Discovery:** We found that our revenue was dangerously concentrated. Just **3,600 customers** (our "Champions") accounted for **$15.6M**—over 50% of our total revenue.
+*   **The Concentration Risk:** We found that our revenue was dangerously concentrated. Just **3,600 customers** (our "Champions") accounted for **$15.6M**—over 50% of our total revenue.
+*   **The "Ignore" Decision:** Crucially, we identified a massive segment of **"Hibernating" customers** who contributed less than 1% of total revenue but likely consumed significant marketing resources. We made the strategic decision to **deprioritize this low-value segment** to focus our budget on protecting the high-value core.
 *   **The Retention Crisis:** We then ran a Cohort Analysis (`official_cohort_retention.sql`) to see if we were keeping these valuable customers. The data showed a scary trend: retention was dropping year over year.
 *   **The 2013 Blueprint:** But we also found hope. In 2013, the company managed a massive **90% reactivation rate** of dormant customers. This proved that our "At-Risk" revenue wasn't lost forever—it could be saved with the right strategy.
 
 ## Chapter 4: The Pivot (The "Loyalty Paradox")
-Armed with this new understanding of our "Whales," we looked back at Australia.
+Armed with this new understanding of our high-value customers, we looked back at Australia.
 *   **The Twist:** Australia wasn't our worst market—it was our **best**. It had a **71.9% Repeat Customer Rate**, the highest in the entire company.
 *   **The Realization:** Our previous assumption was dead wrong. Australians *loved* us. They were coming back again and again. The problem wasn't that they wouldn't buy; it was that we weren't selling them the right things when they returned.
 
@@ -37,7 +38,7 @@ Finally, we looked at the dollar value of these transactions. We found that even
 
 ## Epilogue: The Strategy
 We moved from a simple "Sell more stuff" goal to a nuanced, three-part strategy:
-1.  **Protect the Core:** Launch a retention program for the $15.6M "Whale" segment, using the 2013 reactivation model.
+1.  **Protect the Core:** Launch a retention program for the $15.6M "Champion" segment, using the 2013 reactivation model, while cutting spend on the low-value "Hibernating" group.
 2.  **Fix the Point of Sale:** Close the "Helmet Gap" with a safety protocol.
 3.  **Leverage Loyalty:** Use Australia's high repeat rate to drive higher-value visits.
 
