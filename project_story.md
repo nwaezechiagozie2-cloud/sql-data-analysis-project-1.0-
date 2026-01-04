@@ -6,7 +6,7 @@ We began by looking at the high-level numbers in `business_analysis.sql`. On the
 
 *   **The Discovery:** We realized that while we were selling millions of dollars in Bikes, we were only making a **39% margin** on them. Meanwhile, Accessories were sitting at **63% margin** but were a tiny fraction of our sales.
 *   **The Investigation:** We drilled down into the product mix (`business_deep_dive.sql`) and found the **"Jersey Trap."** We were selling thousands of cycling jerseys at a measly **23% margin**, dragging down our overall profitability. 
-*   **The Hypothesis:** The business was working hard, not smart. We needed to shift the focus from "Volume" (selling cheap jerseys) to "Value" (selling high-margin accessories).
+*   **The Strategy:** We realized we couldn't just stop selling jerseys. Instead, we recommended **bundling** them with high-margin items to blend the profit up, turning a loss leader into a profit driver.
 
 ## Chapter 2: The False Lead (The "Australia Problem")
 With our "Value" hypothesis in hand, we went hunting for the region that was hurting us the most. We found Australia.
@@ -18,9 +18,8 @@ With our "Value" hypothesis in hand, we went hunting for the region that was hur
 We realized we were looking at "Sales" when we should have been looking at "People." We paused the regional analysis to build a full customer profile using **RFM Segmentation** (`customer_segmentation_rfm.sql`).
 
 *   **The Concentration Risk:** We found that our revenue was dangerously concentrated. Just **3,600 customers** (our "Champions") accounted for **$15.6M**—over 50% of our total revenue.
-*   **The "Ignore" Decision:** Crucially, we identified a massive segment of **"Hibernating" customers** who contributed less than 1% of total revenue but likely consumed significant marketing resources. We made the strategic decision to **deprioritize this low-value segment** to focus our budget on protecting the high-value core.
-*   **The Retention Crisis:** We then ran a Cohort Analysis (`official_cohort_retention.sql`) to see if we were keeping these valuable customers. The data showed a scary trend: retention was dropping year over year.
-*   **The 2013 Blueprint:** But we also found hope. In 2013, the company managed a massive **90% reactivation rate** of dormant customers. This proved that our "At-Risk" revenue wasn't lost forever—it could be saved with the right strategy.
+*   **The "Ignore" Decision:** Crucially, we identified a massive segment of **"Hibernating" customers** who contributed less than 1% of total revenue. We made the strategic decision to **deprioritize this low-value segment** to focus our budget on protecting the high-value core.
+*   **The 2013 Blueprint:** We also found historical proof that this strategy works. In 2013, the company managed a massive **90% reactivation rate** of dormant customers. This gave us the confidence to recommend a "High-Value Retention Program" modeled on that success.
 
 ## Chapter 4: The Pivot (The "Loyalty Paradox")
 Armed with this new understanding of our high-value customers, we looked back at Australia.
@@ -38,7 +37,7 @@ Finally, we looked at the dollar value of these transactions. We found that even
 
 ## Epilogue: The Strategy
 We moved from a simple "Sell more stuff" goal to a nuanced, three-part strategy:
-1.  **Protect the Core:** Launch a retention program for the $15.6M "Champion" segment, using the 2013 reactivation model, while cutting spend on the low-value "Hibernating" group.
+1.  **Protect the Core:** Launch a retention program for the $15.6M "Champion" segment, using the 2013 reactivation model.
 2.  **Fix the Point of Sale:** Close the "Helmet Gap" with a safety protocol.
 3.  **Leverage Loyalty:** Use Australia's high repeat rate to drive higher-value visits.
 
